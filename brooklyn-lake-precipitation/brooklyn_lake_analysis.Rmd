@@ -1,0 +1,28 @@
+
+```r
+library(tidyverse)
+library(lubridate)
+
+# Import NADP Brooklyn Lake (WY95) observations
+precip <- read_csv("data/WY95_precipitation.csv")
+
+# Inspect column names and data structure
+glimpse(precip)
+names(precip)
+
+# Once the date and precipitation columns are identified:
+# precip_clean <- precip %>%
+#   mutate(date = as.Date(sample_date)) %>%
+#   filter(!is.na(precipitation_mm))
+
+# Plot weekly precipitation amounts
+# ggplot(precip_clean, aes(x = date, y = precipitation_mm)) +
+#   geom_col(fill = "#D97732", width = 6) +
+#   labs(
+#     title = "Precipitation at Brooklyn Lake, Wyoming",
+#     subtitle = "NADP National Trends Network — WY95",
+#     x = "Year",
+#     y = "Weekly precipitation (mm)"
+#   ) +
+#   theme_minimal()
+```
