@@ -1,0 +1,35 @@
+
+:root {
+  --green: #254c40;
+  --orange: #e87532;
+  --background: #fafaf7;
+  --text: #25342f;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--green);
+  color: white;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  color: var(--green);
+}
+
+a {
+  color: var(--orange);
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
